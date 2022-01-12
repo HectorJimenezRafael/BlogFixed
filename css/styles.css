@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Irish+Grover&display=swap');
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Anaheim', sans-serif;
+    font-family: 'Irish Grover', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    position: fixed;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+    margin-left: 25%;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Otras clases */
+
+header {
+    height: 100vh;
+    background-image: url("../img/inazuma.png");
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+
+/*img {
+    width: 100%;
+}*/
+
+#card-1 {
+    background-image: url(../img/balón.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url(../img/best_eleven.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url(../img/ina_sd.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url(../img/tezcat.jfif);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-5 {
+    background-image: url(../img/ina1.jfif);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-6 {
+    background-image: url(../img/ina2.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-7 {
+    background-image: url(../img/ina3.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-8 {
+    background-image: url(../img/ina_s.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+footer {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    #caja-10 {
+        width: 100%;
+    }
+    .column-nav {
+        width: 100%;
+        position: relative;
+    }
+    .column-75 {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+.back-white {
+    background-color: white;
+}
